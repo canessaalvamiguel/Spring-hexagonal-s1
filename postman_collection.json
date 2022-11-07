@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "fcebc1b9-bb3e-46ed-8a38-ac26c2a14107",
+		"name": "Spring Hexagonal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "157952"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Clients Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"41620725-34e0-44e3-a2e4-cf30a92796de\",\r\n    \"name\" : \"miguel\",\r\n    \"country\" : \"PE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/create?id=41620725-34e0-44e3-a2e4-cf30a92796de&name=miguel&country=PE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"create"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "41620725-34e0-44e3-a2e4-cf30a92796de"
+						},
+						{
+							"key": "name",
+							"value": "miguel"
+						},
+						{
+							"key": "country",
+							"value": "PE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
